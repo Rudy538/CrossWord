@@ -1,0 +1,88 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #f3f1eb;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 10%;
+
+    >* {
+        box-shadow: 4px 4px 16px #0004;
+    }
+}
+
+.crossWord-background {
+    background-color: #ffffff;
+    height: 90vh;
+    width: 50%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+#questionfield {
+    /* margin: 0 72px; */
+    height: fit-content;
+    max-height:70vh;
+    overflow: auto;
+    padding: 5rem;
+    background-color: #ffffff;
+}
+
+
+.letters {
+    border: 1px solid black;
+    height: 2lh;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offset {
+    border: 1px solid transparent;
+    background: none !important;
+    height: 2lh;
+    aspect-ratio: 1/1;
+}
+
+.answerRight .letters {
+    background-color: #23a923 !important;
+}
+
+#crossWord {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4px;
+
+    >.row {
+        display: flex;
+        flex-flow: row nowrap;
+        width: fit-content;
+        gap: 4px;
+
+        >* {
+            background: white;
+        }
+    }
+}
+
+input {
+    border: 1px dotted black;
+    border-top: none;
+    outline: none;
+    padding: 0 0 0 10px;
+    border-radius: 10px;
+}
+
+.passwordLine {
+    filter: brightness(90%);
+}
